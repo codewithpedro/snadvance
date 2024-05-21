@@ -1,0 +1,25 @@
+@import url(./reset.css);
+
+.page {
+  background-color: #E0E0E0;
+}
+
+.page__content {
+  padding: 29px 65px;
+  max-width: 1600px;
+  margin-inline: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav_link:hover {
+  cursor: pointer;
+}
