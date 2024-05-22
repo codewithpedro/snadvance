@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ServiceNow Advance</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
@@ -13,14 +16,73 @@
 <body class="page">
   <div class="page__content">
     <header class="header">
-      <img class="header__image" src="./images/sm-logo-sdadvance-min.png" alt="SN Advance logo">
+      <img class="header__image" src="./images/logo-snadvance-black.png" alt="SN Advance logo">
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__list-item"><a class="nav__link">Home</a></li>
-          <li class="nav__list-item">Prep<i class="fa-solid fa-caret-down"></i></li>
-          <li class="nav__list-item">Media<i class="fa-solid fa-caret-down"></i></li>
-          <li class="nav__list-item">Career Tips<i class="fa-solid fa-caret-down"></i></li>
-          <li class="nav__list-item">Use Cases<i class="fa-solid fa-caret-down"></i></li>
+          <li class="nav__list-item dropdown">
+            <div class="dropdown__item">
+              <a>Home</a><i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="dropdown__content">
+              <ul class="dropdown__list">
+                <li><a class="dropdown__link">How to start your journey</a></li>
+                <li><a class="dropdown__link">How to keep it going</a></li>
+                <li><a class="dropdown__link">How to succeed</a></li>
+                <li><a class="dropdown__link">Success Stories</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__list-item dropdown">
+            <div class="dropdown__item">
+              Prep<i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="dropdown__content">
+              <ul class="dropdown__list">
+                <li><a class="dropdown__link">CSA</a></li>
+                <li><a class="dropdown__link">CAD</a></li>
+                <li><a class="dropdown__link">ITSM</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__list-item dropdown">
+            <div class="dropdown__item">
+              Media<i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="dropdown__content">
+              <ul class="dropdown__list">
+                <li><a class="dropdown__link">Videos</a></li>
+                <li><a class="dropdown__link">Podcast</a></li>
+                <li><a class="dropdown__link">Recommendation List</a></li>
+                <li><a class="dropdown__link">Firelive Chat</a></li>
+                <li><a class="dropdown__link">Books</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__list-item dropdown">
+            <div class="dropdown__item">
+              Career Tips<i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="dropdown__content">
+              <ul class="dropdown__list">
+                <li><a class="dropdown__link">Resume</a></li>
+                <li><a class="dropdown__link">Interview</a></li>
+                <li><a class="dropdown__link">Career Transition</a></li>
+                <li><a class="dropdown__link">NextGen Video</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__list-item dropdown">
+            <div class="dropdown__item">
+              Use Cases<i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="dropdown__content">
+              <ul class="dropdown__list">
+                <li><a class="dropdown__link">Self Paced Labs</a></li>
+                <li><a class="dropdown__link">Story Algie</a></li>
+                <li><a class="dropdown__link">Questionnaire</a></li>
+              </ul>
+            </div>
+          </li>
           <li class="nav__list-item"><a class="nav__link">Discord</a></li>
         </ul>
       </nav>
