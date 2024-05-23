@@ -4,6 +4,10 @@ a:hover {
   cursor: pointer;
 }
 
+h2 {
+  font-size: 30px;
+}
+
 .page {
   background-color: #E0E0E0;
 }
@@ -26,7 +30,6 @@ a:hover {
   width: 55px
 }
 
-nav {}
 
 .nav__list {
   display: flex;
@@ -36,6 +39,8 @@ nav {}
 
 .nav__list .fa-caret-down {
   margin-left: 5px;
+  font-size: 13px;
+
 }
 
 .nav__link,
@@ -48,7 +53,6 @@ nav {}
   cursor: pointer;
 }
 
-.dropdown {}
 
 .dropdown__item:hover {
   cursor: default;
@@ -76,8 +80,51 @@ nav {}
   padding-bottom: 18px;
 }
 
+.main__home {}
+
+
+.box {
+  position: relative;
+  height: 100vh;
+  background: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.box__content {
+  max-width: 200px;
+  background-color: #ededed;
+  padding: 40px 50px;
+  border-radius: 10px;
+  position: absolute;
+  top: 40px;
+  left: 70px;
+}
+
+.box__title {
+  margin-bottom: 20px;
+}
+
+.box__subtitle {
+  margin-bottom: 20px;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+}
+
+.box__btn {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #82BB50;
+}
+
+
 @media screen and (max-width: 830px) {
   .nav {
+    display: none;
+    justify-content: center;
     position: absolute;
     left: 0;
     right: 0;
@@ -85,12 +132,18 @@ nav {}
     top: 0;
     background-color: #82BB50;
     overflow: auto;
+    padding-block: 55px;
+    z-index: 100;
   }
 
   .nav__list {
+    position: absolute;
     flex-direction: column;
+    align-items: unset;
+  }
 
-    align-items: center;
+  .nav__list-item:last-of-type {
+    margin-bottom: 55px;
   }
 
   .dropdown__item {
@@ -110,4 +163,5 @@ nav {}
   .fa-caret-down {
     display: none;
   }
+
 }
