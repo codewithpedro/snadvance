@@ -8,26 +8,32 @@ h2 {
   font-size: 30px;
 }
 
-.page {
-  background-color: #E0E0E0;
+button {
+  cursor: pointer;
 }
 
-.page__content {
+.container {
   max-width: 1600px;
   margin-inline: auto;
 }
 
+.page {
+  background-color: #E0E0E0;
+}
+
 .header {
+  background-color: #82BB50;
+}
+
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #82BB50;
   padding: 10px 65px;
-
 }
 
 .header__image {
-  width: 55px
+  width: 125px;
 }
 
 
