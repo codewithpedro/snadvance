@@ -24,6 +24,10 @@ img {
   width: 100%;
 }
 
+.page {
+  position: relative;
+}
+
 .container {
   max-width: 1600px;
   margin-inline: auto;
@@ -103,6 +107,12 @@ img {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
 }
 
+@media screen and (max-width: 860px) {
+  .header.header__active {
+    position: unset;
+  }
+}
+
 .header .container {
   display: flex;
   justify-content: space-between;
@@ -110,12 +120,6 @@ img {
   padding: 10px 65px;
 }
 
-@media screen and (max-width: 600px) {
-  .header .container {
-    padding-inline: 0;
-
-  }
-}
 
 .header__image {
   width: 125px;
@@ -124,7 +128,7 @@ img {
 
 .nav__list {
   display: flex;
-  align-items: end;
+  align-items: center;
   gap: 35px;
 }
 
@@ -146,11 +150,22 @@ img {
   left: 10px;
 }
 
+
+.menu__button {
+  display: none;
+}
+
+
 .nav__link,
 .nav__list-item {
   font-family: 'Raleway';
   font-size: 14px;
   font-weight: 500;
+}
+
+.nav__list-item:has(i.fa-discord),
+.nav__list-item:has(i.fa-twitter) {
+  padding-block: unset;
 }
 
 .nav_link:hover {
@@ -185,19 +200,42 @@ img {
   padding-bottom: 18px;
 }
 
-@media screen and (max-width: 830px) {
+.fa-twitter,
+.fa-discord {
+  font-size: 20px;
+}
+
+.fa-xmark {
+  cursor: pointer;
+  font-size: 40px;
+  margin-left: 205px;
+  margin-top: -20px;
+}
+
+
+@media screen and (max-width: 860px) {
   .nav {
     display: none;
     justify-content: center;
+    text-align: center;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     top: 0;
     background-color: #82BB50;
-    overflow: auto;
     padding-block: 55px;
-    z-index: 100;
+    z-index: 1000;
+  }
+
+  .nav__active {
+    display: flex;
+  }
+
+  .menu__button {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
   }
 
   .nav__list {
@@ -374,7 +412,7 @@ img {
   gap: 50px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .footer .container {
     flex-direction: column;
     text-align: center;
