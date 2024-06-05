@@ -138,7 +138,7 @@ img {
 }
 
 .dropdown__content .list__triangle {
-  color: white;
+  color: f9f9f9;
   position: absolute;
   top: -18px;
   transform: rotate(180deg);
@@ -374,7 +374,14 @@ img {
   gap: 50px;
 }
 
-.footer__list li:first-of-type {
+@media screen and (max-width: 600px) {
+  .footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.footer__list li:first-of-type:not(:last-of-type) {
   text-decoration: underline;
 }
 
