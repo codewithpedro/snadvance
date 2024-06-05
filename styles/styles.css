@@ -206,10 +206,7 @@ img {
 }
 
 .fa-xmark {
-  cursor: pointer;
-  font-size: 40px;
-  margin-left: 205px;
-  margin-top: -20px;
+  display: none;
 }
 
 
@@ -264,6 +261,14 @@ img {
 
   .fa-caret-down {
     display: none;
+  }
+
+  .fa-xmark {
+    display: block;
+    cursor: pointer;
+    font-size: 40px;
+    margin-left: 205px;
+    margin-top: -25px;
   }
 }
 
