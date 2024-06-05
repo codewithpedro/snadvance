@@ -335,7 +335,7 @@ img {
   gap: 60px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1150px) {
   .discord__images {
     display: none;
   }
