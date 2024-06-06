@@ -1,5 +1,11 @@
 @import url(./reset.css);
 
+/*
+Green: #82BB50
+White: #e0e0e0
+Blue: #035D76
+ */
+
 a:hover {
   cursor: pointer;
 }
@@ -10,6 +16,10 @@ h3,
 h4,
 p {
   line-height: 1.4;
+}
+
+h1 {
+  font-size: 40px;
 }
 
 h2 {
@@ -24,6 +34,20 @@ img {
   width: 100%;
 }
 
+iframe {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.pdf {
+  width: 70%;
+  height: 80vh;
+  margin-inline: auto;
+}
+
 .page {
   position: relative;
 }
@@ -31,6 +55,13 @@ img {
 .container {
   max-width: 1600px;
   margin-inline: auto;
+
+}
+
+@media screen and (max-width: 1600px) {
+  .container {
+    margin-inline: 65px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -48,9 +79,6 @@ img {
   background-color: #ededed;
   padding: 40px 50px;
   border-radius: 10px;
-  /*position: absolute;
-  top: 40px;
-  left: 70px;*/
   margin-top: 200px;
   margin-left: 0px;
 }
@@ -59,7 +87,7 @@ img {
   .box {
     max-width: 300px;
     margin-top: 100px;
-    margin-left: 200px;
+    margin-left: 135px;
   }
 }
 
@@ -93,11 +121,13 @@ img {
 }
 
 .btn {
+  display: block;
   border: none;
   border-radius: 5px;
   width: 100%;
   padding: 10px 20px;
   background-color: #82BB50;
+  color: black;
 }
 
 .header {
@@ -117,7 +147,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 65px;
+  padding-block: 10px;
 }
 
 
@@ -343,7 +373,7 @@ img {
 .discord-section {
   height: unset;
   overflow: unset;
-  padding: 50px 65px;
+  padding-block: 50px;
 }
 
 .discord-section .container {
@@ -409,7 +439,7 @@ img {
 .footer {
   background-color: #035D76;
   color: white;
-  padding: 50px 65px;
+  padding-block: 50px;
 }
 
 .footer .container {

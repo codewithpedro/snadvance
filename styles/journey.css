@@ -1,0 +1,30 @@
+.journey {
+  min-height: 100vh;
+  background-color: #035D76;
+  overflow: auto;
+}
+
+.journey__content {
+  display: flex;
+  gap: 70px;
+  margin-block: 50px;
+  align-items: center;
+}
+
+.journey__content p {
+  width: 400px;
+}
+
+.journey__content h1 {
+  width: 250px;
+}
+
+.journey__pdf {
+  margin-bottom: 40px;
+}
+
+.btn-journey {
+  margin-bottom: 100px;
+  max-width: 300px;
+  margin-inline: auto;
+}
