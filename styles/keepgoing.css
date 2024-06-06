@@ -1,1 +1,36 @@
+.keepgoing {
+  min-height: 100vh;
+  background-color: #82BB50;
+  color: black;
+  overflow: auto;
+}
 
+.keepgoing__content {
+  display: flex;
+  gap: 70px;
+  margin-block: 50px;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .keepgoing__content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.keepgoing__content p {
+  max-width: 400px;
+}
+
+.keepgoing__content h1 {
+  max-width: 225px;
+}
+
+.keepgoing__pdf {
+  margin-bottom: 40px;
+}
+
+.keepgoing__video {
+  margin-bottom: 100px;
+}
