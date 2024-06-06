@@ -11,12 +11,25 @@
   align-items: center;
 }
 
+@media screen and (max-width: 600px) {
+  .journey__content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
 .journey__content p {
-  width: 400px;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 600px) {
+  .journey__content p {
+    max-width: 300px;
+  }
 }
 
 .journey__content h1 {
-  width: 250px;
+  max-width: 250px;
 }
 
 .journey__pdf {
