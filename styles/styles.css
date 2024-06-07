@@ -5,6 +5,10 @@ Green: #82BB50
 White: #e0e0e0
 Blue: #035D76
  */
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 a:hover {
   cursor: pointer;
@@ -193,7 +197,6 @@ iframe {
   width: 125px;
 }
 
-
 .nav__list {
   display: flex;
   align-items: center;
@@ -234,6 +237,13 @@ iframe {
 .nav__list-item:has(i.fa-discord),
 .nav__list-item:has(i.fa-twitter) {
   padding-block: unset;
+  color: #476273;
+}
+
+
+.nav__list-item:has(i.fa-discord):hover,
+.nav__list-item:has(i.fa-twitter):hover {
+  color: black;
 }
 
 .nav_link:hover {
@@ -261,11 +271,20 @@ iframe {
 
 .dropdown__link {
   display: block;
-  margin: 18px 12px 0 12px;
+  padding: 9px 12px 9px 12px;
+}
+
+
+.dropdown__list li:hover {
+  background-color: #82BB50;
+}
+
+.dropdown__list:first-of-type {
+  margin-top: 9px;
 }
 
 .dropdown__list:last-of-type {
-  padding-bottom: 18px;
+  margin-bottom: 9px;
 }
 
 .fa-twitter,

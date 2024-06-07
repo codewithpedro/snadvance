@@ -2,6 +2,7 @@
   min-height: 100vh;
   background-color: #035D76;
   overflow: auto;
+  color: white;
 }
 
 .journey__content {
